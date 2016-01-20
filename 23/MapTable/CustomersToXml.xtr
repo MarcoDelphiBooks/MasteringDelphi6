@@ -1,0 +1,81 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToXml"><SelectEach from="DATAPACKET\ROWDATA\ROW" dest="\Document\Customer"><Select from="@CustNo" dest="\CustNo"/><Select from="@Company" dest="\Company"/><Select from="@Addr1" dest="\Addr1"/><Select from="@Addr2" dest="\Addr2"/><Select from="@City" dest="\City"/><Select from="@State" dest="\State"/><Select from="@Zip" dest="\Zip"/><Select from="@Country" dest="\Country"/><Select from="@Phone" dest="\Phone"/><Select from="@FAX" dest="\FAX"/><Select from="@TaxRate" dest="\TaxRate"/><Select from="@Contact" dest="\Contact"/><Select from="@LastInvoiceDate" dest="\LastInvoiceDate"/></SelectEach></Transform><XmlSchema RootName="Document"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Document" type="DocumentType"/>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element name="Customer" type="CustomerType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" type="CustomerType"/>
+  <xs:complexType name="CustomerType">
+    <xs:sequence>
+      <xs:element name="CustNo" type="CustNoType"/>
+      <xs:element name="Company" type="CompanyType"/>
+      <xs:element name="Addr1" type="Addr1Type"/>
+      <xs:element name="Addr2" type="Addr2Type"/>
+      <xs:element name="City" type="CityType"/>
+      <xs:element name="State" type="StateType"/>
+      <xs:element name="Zip" type="ZipType"/>
+      <xs:element name="Country" type="CountryType"/>
+      <xs:element name="Phone" type="PhoneType"/>
+      <xs:element name="FAX" type="FAXType"/>
+      <xs:element name="TaxRate" type="TaxRateType"/>
+      <xs:element name="Contact" type="ContactType"/>
+      <xs:element name="LastInvoiceDate" type="LastInvoiceDateType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustNo" type="CustNoType"/>
+  <xs:simpleType name="CustNoType">
+    <xs:restriction base="xs:float"/>
+  </xs:simpleType>
+  <xs:element name="Company" type="CompanyType"/>
+  <xs:simpleType name="CompanyType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Addr1" type="Addr1Type"/>
+  <xs:simpleType name="Addr1Type">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Addr2" type="Addr2Type"/>
+  <xs:simpleType name="Addr2Type">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="City" type="CityType"/>
+  <xs:simpleType name="CityType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="State" type="StateType"/>
+  <xs:simpleType name="StateType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Zip" type="ZipType"/>
+  <xs:simpleType name="ZipType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Country" type="CountryType"/>
+  <xs:simpleType name="CountryType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Phone" type="PhoneType"/>
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FAX" type="FAXType"/>
+  <xs:simpleType name="FAXType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TaxRate" type="TaxRateType"/>
+  <xs:simpleType name="TaxRateType">
+    <xs:restriction base="xs:float"/>
+  </xs:simpleType>
+  <xs:element name="Contact" type="ContactType"/>
+  <xs:simpleType name="ContactType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="LastInvoiceDate" type="LastInvoiceDateType"/>
+  <xs:simpleType name="LastInvoiceDateType">
+    <xs:restriction base="xs:timeInstant"/>
+  </xs:simpleType>
+</xs:schema>]]></XmlSchema><CdsSkeleton><![CDATA[<DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="CustNo" fieldtype="r8"><PARAM Name="PROVFLAGS" Value="7" Type="i4" Roundtrip="True"/></FIELD><FIELD attrname="Company" fieldtype="string" WIDTH="30"/><FIELD attrname="Addr1" fieldtype="string" WIDTH="30"/><FIELD attrname="Addr2" fieldtype="string" WIDTH="30"/><FIELD attrname="City" fieldtype="string" WIDTH="15"/><FIELD attrname="State" fieldtype="string" WIDTH="20"/><FIELD attrname="Zip" fieldtype="string" WIDTH="10"/><FIELD attrname="Country" fieldtype="string" WIDTH="20"/><FIELD attrname="Phone" fieldtype="string" WIDTH="15"/><FIELD attrname="FAX" fieldtype="string" WIDTH="15"/><FIELD attrname="TaxRate" fieldtype="r8"/><FIELD attrname="Contact" fieldtype="string" WIDTH="20"/><FIELD attrname="LastInvoiceDate" fieldtype="dateTime"/></FIELDS><PARAMS DEFAULT_ORDER="1" PRIMARY_KEY="1" LCID="1033"/></METADATA><ROWDATA/></DATAPACKET>
+]]></CdsSkeleton><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?>
+<Document><Customer><CustNo></CustNo><Company></Company><Addr1></Addr1><Addr2></Addr2><City></City><State></State><Zip></Zip><Country></Country><Phone></Phone><FAX></FAX><TaxRate></TaxRate><Contact></Contact><LastInvoiceDate></LastInvoiceDate></Customer></Document>
+]]></Skeleton></XmlTransformation>

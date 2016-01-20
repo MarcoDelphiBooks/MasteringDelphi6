@@ -1,0 +1,57 @@
+US Headquarters
+	Board of Directors
+		Monica Ross
+			US Offices
+				European Offices
+					London
+						Joe Winkler
+						Marion Kim
+					Milan
+						Paolo Rossi
+						Andrea bianchi
+					Frankfurt
+						Hans Weber
+						
+					Moscow
+				New York
+					Mark Wright
+					John Reynolds
+				San Francisco
+					Mary Farrell
+					JJD
+				Atlanta
+					Chris Morgan
+					Paula Read
+					Steve Marigo
+	Marketing
+		Steve Rubens
+	Sales
+		Far East
+			Paris
+				Francois Martoni
+				Jeanette Moret
+			Tokio
+				Singapore
+					Terry Merks
+						Eddie Flint
+							Kim Seh Joh
+				Men Caraci
+			Sidney
+				John Calgary
+				Mark Reen
+		John Reiter
+	Administration
+		Argentina
+			Buenos Aires
+		Ian Green
+			Ben Parry
+	Partners
+		Brasil
+			Rio De Janueiro
+			Sao Paulo
+		Mexico
+			Mexico City
+	R&D
+		Michael Tour
+	Support
+		Tony Gar
